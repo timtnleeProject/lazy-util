@@ -2,7 +2,7 @@
   "name": "lazy-util",
   "version": "1.0.0",
   "description": "",
-  "main": "lib/",
+  "main": "lib",
   "module": "lib",
   "scripts": {
     "build": "rm -rf lib && tsc",
