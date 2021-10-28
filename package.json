@@ -5,7 +5,9 @@
   "main": "lib",
   "module": "lib",
   "scripts": {
-    "build": "rm -rf lib && tsc",
+    "build": "npm run build:common && npm run build:es",
+    "build:common": "rm -rf lib/commmonjs && tsc --outDir lib/commmonjs --module CommonJS",
+    "build:es": "rm -rf lib/es && tsc --outDir lib/es --module es6",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
